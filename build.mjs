@@ -9,6 +9,6 @@ try {
   process.exit(1);
 }
 await mkdir('dist', { recursive: true });
-await writeFile('dist/version.json', JSON.stringify({ application: 'deployment-support', release }) + '\n');
-await writeFile('dist/index.html', '<!doctype html><title>Checkout demo</title><h1>Checkout demo</h1>');
+await writeFile('dist/version.json', JSON.stringify({ application: 'deployment-support-decoy', release }) + '\n');
+await writeFile('dist/index.html', '<!doctype html><title>Archived checkout demo</title><h1>Archived checkout demo</h1>');
 console.log('Static build completed');
